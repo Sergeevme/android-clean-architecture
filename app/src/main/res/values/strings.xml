@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Clean Architecture</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="loaded">Loaded</string>
+    <string name="string_to_save">String to save</string>
+    <string name="load">Load</string>
+</resources>
