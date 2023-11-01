@@ -8,6 +8,8 @@ Considering the common architectural principles mentioned in the previous sectio
 
 You can add an additional layer called the domain layer to simplify and reuse the interactions between the UI and data layers.
 
+![android app architecture](/images/android.png "Android App architecture")
+
 ## Technologies
 
 **LiveData** — to observe and react to changes in data, particularly data that is part of the UI. \
