@@ -20,6 +20,10 @@ You can add an additional layer called the domain layer to simplify and reuse th
 **Coroutines** — converts async callbacks for long-running tasks into sequential code. \
 **Material3** — design system built and supported by Google designers and developers.
 
+## Project UI
+
+![app UI](/images/app-ui-1.png "App UI") ![app UI](/images/app-ui-2.png "App UI")
+
 ## Code examples
 
 ```kotlin
