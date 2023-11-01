@@ -9,8 +9,10 @@ private const val KEY_NOTE =  "note"
 
 private const val DEFAULT_ID = 1L
 
+// Implementation of @NoteStorage to save() and get()
 class SharedPrefNoteStorage(context: Context) : NoteStorage {
 
+    // Init sharedPreferences
     private val sharedPreferences = context.getSharedPreferences(
         SHARED_PREFS_NOTE_NAME,
         Context.MODE_PRIVATE

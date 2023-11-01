@@ -1,13 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.AndroidCleanArchitecture" parent="Theme.Material3.DayNight.NoActionBar">
 
-        <item name="android:statusBarColor">@color/material_dynamic_primary70</item>
-
-
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/material_dynamic_primary90</item>
+        <item name="colorPrimaryVariant">@color/material_dynamic_primary60</item>
+        <item name="colorOnPrimary">@color/material_dynamic_primary10</item>
+        <item name="colorAccent">@color/material_dynamic_primary90</item>
+
+        <!-- Secondary brand color. -->
+        <item name="background">@color/white</item>
+        <item name="colorOnBackground">@color/material_dynamic_primary30</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
     </style>
 
     <style name="Theme.AndroidCleanArchitecture" parent="Base.Theme.AndroidCleanArchitecture" />
+
 </resources>

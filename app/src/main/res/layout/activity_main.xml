@@ -21,12 +21,12 @@
             android:layout_height="wrap_content"
             android:autoSizeMaxTextSize="28dp"
             android:ellipsize="end"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="serif-monospace"
             android:maxLines="1"
             android:text="Hello World!"
             android:textColor="@color/material_dynamic_primary10"
-            android:textSize="24sp"
+            android:textSize="@dimen/font_size_accent_main"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +45,7 @@
             android:insetBottom="0dp"
             android:maxWidth="300dp"
             android:text="@string/load"
+            android:textColor="@color/material_dynamic_primary90"
             android:textSize="20sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +86,7 @@
                 android:inputType="textCapSentences"
                 android:maxLines="1"
                 android:textColor="@color/material_dynamic_primary10"
-                android:textSize="16sp" />
+                android:textSize="@dimen/font_size_secondary_main" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,7 +102,7 @@
             android:insetBottom="0dp"
             android:maxWidth="300dp"
             android:text="@string/save"
-            android:textSize="20sp"
+            android:textSize="@dimen/font_size_text_main"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -120,7 +121,27 @@
             android:maxLines="1"
             android:text=""
             android:textColor="@color/material_dynamic_primary10"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_size_secondary_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_save_main" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_counter_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoSizeMaxTextSize="28dp"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:clickable="true"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/material_dynamic_primary10"
+            android:textSize="@dimen/font_size_big"
+            android:padding="20dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_save_main" />

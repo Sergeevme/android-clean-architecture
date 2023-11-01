@@ -15,7 +15,7 @@ class NoteRepositoryImpl(private val noteStorage: NoteStorage) : NoteRepository 
 
     override fun getNote(): Note {
         val noteData = noteStorage.get()
-        return Note(id = noteData.id, text = noteData.text)
+        return mapToDomain(noteData)
     }
 
     private fun mapToStorage(note: SaveNote): NoteData {

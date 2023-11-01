@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_size_accent_main">24sp</dimen>
+    <dimen name="font_size_text_main">18sp</dimen>
+    <dimen name="font_size_secondary_main">16sp</dimen>
+    <dimen name="font_size_big">50sp</dimen>
+
+    <!--corner radius-->
+    <dimen name="corner_radius_base_card_view">16dp</dimen>
+    <dimen name="corner_radius_base_button">8dp</dimen>
+
+</resources>
