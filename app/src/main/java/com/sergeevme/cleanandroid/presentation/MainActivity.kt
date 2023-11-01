@@ -72,7 +72,10 @@ class MainActivity : AppCompatActivity() {
         btnResizeListener.onTouchListener(textCounter)
     }
 
-    private fun <T> ComponentActivity.collectLatestLifecycleFlow(flow: Flow<T>, collect: suspend (T) -> Unit) {
+    private fun <T> ComponentActivity.collectLatestLifecycleFlow(
+        flow: Flow<T>,
+        collect: suspend (T) -> Unit
+    ) {
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.RESUMED) {
                 flow.collectLatest(collect)
