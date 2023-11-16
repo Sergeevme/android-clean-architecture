@@ -18,7 +18,9 @@ You can add an additional layer called the domain layer to simplify and reuse th
 **MVVM** — architectural pattern in computer software that facilitates the separation of the development of the UI. \
 **Flow** — great fit for live data updates and endless streams of data. \
 **Coroutines** — converts async callbacks for long-running tasks into sequential code. \
-**Material3** — design system built and supported by Google designers and developers.
+**Material3** — design system built and supported by Google designers and developers. \
+**JUnit 5** — testing framework for Java and the JVM. \
+**Mockito** — most popular Mocking framework for unit tests written in Java.
 
 ## Project UI
 
