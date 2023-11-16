@@ -10,6 +10,9 @@ import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.Arguments
+import org.junit.jupiter.params.provider.MethodSource
 import org.mockito.Mockito
 import org.mockito.kotlin.mock
 
@@ -41,36 +44,25 @@ class MainViewModelTest {
         })
     }
 
-    @Test
-    fun `should save text and return true`() {
+    companion object {
+        @JvmStatic
+        fun textSaving() = listOf(
+            Arguments.of(true, "Saved"),
+            Arguments.of(false, "Not Saved")
+        )
+    }
 
-        val saveResult = true
+    @ParameterizedTest
+    @MethodSource("textSaving")
+    fun `should save text and return true`(input: Boolean, expected: String) {
+
         val testSaveText = "test text"
         val testParams = SaveNote(text = testSaveText)
 
-        Mockito.`when`(saveNoteUseCase.execute(testParams)).thenReturn(saveResult)
+        Mockito.`when`(saveNoteUseCase.execute(testParams)).thenReturn(input)
 
         viewModel.save(text = testSaveText)
 
-        val expected = "Saved"
-        val actual = viewModel.lastActionLive.value
-
-        Mockito.verify(saveNoteUseCase, Mockito.times(1)).execute(testParams)
-        Assertions.assertEquals(expected, actual)
-    }
-
-    @Test
-    fun `should save text and return false`() {
-
-        val saveResult = false
-        val testSaveText = "test text false"
-        val testParams = SaveNote(text = testSaveText)
-
-        Mockito.`when`(saveNoteUseCase.execute(testParams)).thenReturn(saveResult)
-
-        viewModel.save(text = testSaveText)
-
-        val expected = "Not Saved"
         val actual = viewModel.lastActionLive.value
 
         Mockito.verify(saveNoteUseCase, Mockito.times(1)).execute(testParams)
