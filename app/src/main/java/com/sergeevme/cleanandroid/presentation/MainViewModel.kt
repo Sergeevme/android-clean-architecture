@@ -26,8 +26,8 @@ class MainViewModel(
     private val _stateFlowMutable = MutableStateFlow<Int>(0)
     val stateFlow = _stateFlowMutable.asStateFlow()
 
-    private val lastActionLiveMutable = MutableLiveData<String>()
-    val lastActionLive: LiveData<String> = lastActionLiveMutable
+    private val _lastActionLiveMutable = MutableLiveData<String>()
+    val lastActionLive: LiveData<String> = _lastActionLiveMutable
 
     init {
         Log.d(TAG, "init")
@@ -52,15 +52,15 @@ class MainViewModel(
         val saveNote = SaveNote(text = text)
         val status: Boolean = saveNoteUseCase.execute(saveNote)
 
-        if (status) lastActionLiveMutable.value = "Saved"
-        else lastActionLiveMutable.value = "Not Saved"
+        if (status) _lastActionLiveMutable.value = "Saved"
+        else _lastActionLiveMutable.value = "Not Saved"
     }
 
     // Load last result update live data value
     fun load() {
         Log.d(TAG, "load")
         val note: Note = getNoteUseCase.execute()
-        lastActionLiveMutable.value = "Loaded"
+        _lastActionLiveMutable.value = "Loaded"
         _loadLiveMutable.value = note.text
     }
 

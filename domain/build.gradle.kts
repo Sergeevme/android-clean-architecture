@@ -12,7 +12,6 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-
 dependencies {
 
     // JUnit 5
