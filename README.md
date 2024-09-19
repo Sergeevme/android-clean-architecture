@@ -22,6 +22,10 @@ You can add an additional layer called the domain layer to simplify and reuse th
 **JUnit 5** — testing framework for Java and the JVM. \
 **Mockito** — most popular Mocking framework for unit tests written in Java.
 
+**Kotlin:** 2.0.20
+**Gradle:** 8.5.2
+**Java:** 17
+
 ## Project UI
 
 ![app UI](/images/app-ui-1.png "App UI") ![app UI](/images/app-ui-2.png "App UI")
@@ -58,7 +62,7 @@ private fun <T> ComponentActivity.collectLatestLifecycleFlow(
 
 ## License
 
-[MIT: ](https://choosealicense.com/licenses/mit/) Copyright (c) 2023 sergeevme
+[MIT: ](https://choosealicense.com/licenses/mit/) Copyright (c) 2024 sergeevme
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

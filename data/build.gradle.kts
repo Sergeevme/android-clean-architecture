@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.sergeevme.cleanandroid.data"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 26
@@ -35,5 +35,5 @@ android {
 dependencies {
     testImplementation("junit:junit:4.13.2")
     implementation(project(":domain"))
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
 }
