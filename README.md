@@ -24,7 +24,7 @@ You can add an additional layer called the domain layer to simplify and reuse th
 
 **Kotlin:** 2.0.20 \
 **Gradle:** 8.5.2 \
-**Java:** 17 \
+**Java:** 17
 
 ## Project UI
 
