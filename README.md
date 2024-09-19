@@ -22,9 +22,9 @@ You can add an additional layer called the domain layer to simplify and reuse th
 **JUnit 5** — testing framework for Java and the JVM. \
 **Mockito** — most popular Mocking framework for unit tests written in Java.
 
-**Kotlin:** 2.0.20
-**Gradle:** 8.5.2
-**Java:** 17
+**Kotlin:** 2.0.20 \
+**Gradle:** 8.5.2 \
+**Java:** 17 \
 
 ## Project UI
 
